@@ -1,0 +1,14 @@
+{
+  "projectName": "basic-node-openai",
+  "language": "node",
+  "framework": "none",
+  "envFile": ".env",
+  "services": [
+    {
+      "id": "openai",
+      "provider": "openai",
+      "envVarKey": "OPENAI_API_KEY",
+      "scopes": ["chat", "embeddings", "images"]
+    }
+  ]
+}

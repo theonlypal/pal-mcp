@@ -1,0 +1,22 @@
+{
+  "name": "basic-node-openai",
+  "version": "1.0.0",
+  "description": "Example Node.js project using PAL with OpenAI",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "openai": "^4.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "openai",
+    "pal",
+    "example"
+  ],
+  "license": "MIT"
+}

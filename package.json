@@ -1,0 +1,22 @@
+{
+  "name": "pal-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portable API Layer - Local MCP + CLI orchestration for API keys and external services",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "clean": "pnpm -r clean",
+    "pal": "node packages/cli/dist/bin/pal.js",
+    "mcp-server": "node packages/mcp-server/dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

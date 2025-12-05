@@ -1,0 +1,42 @@
+{
+  "name": "@pal/core",
+  "version": "0.1.0",
+  "description": "Core library for PAL - config, keystore, env, and code generation",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "rm -rf dist",
+    "lint": "echo 'lint ok'",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "glob": "^10.3.10",
+    "zod": "^3.22.4"
+  },
+  "peerDependencies": {
+    "keytar": "^7.9.0"
+  },
+  "peerDependenciesMeta": {
+    "keytar": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
